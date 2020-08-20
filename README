@@ -1,0 +1,64 @@
+Group Info and Contribution:-
+2017csb1070(Anmol)  :- GUI,memory access stage,Memory File,phase1(file handling),Errors & Exception handling
+2018csb1090(Gazal)  :- phase1(file handling-generation of basic code),encoder(S,SB format)
+2018csb1074(Arjav)  :- Decode stage(R,I formats),Write back stage,Encoding(U format)
+2018csb1078(Ayush)  :- phase1(file handling-generation of original code),encoder(R,I)
+2018csb1083(Deepak) :- Decode stage(S,SB,U,UJ formats),ALU stage,fetch,Encoding(UJ format),Register File
+
+Language  :- Python,HTML,css,Javascript
+Framework :- Flask
+
+Assumptions:-
+1. 'jalr' is accepted as 'jalr x0 x1 4'.
+2. 'lb lw lh sb sw sh' are accepted as 'lb/lw/lh/sb/sw/sh  x3 x2 Immediate'.
+3. use x2 instead of sp.
+
+
+How to Run:-
+
+Step-1: Set up environment 
+1. Make a Python(3.7.3) virtual env.
+2. Run the following command 
+    -"pip install flask"
+    -"pip install bitstring"
+
+Step-2: Run App
+1. Open terminal in working directory
+2. Activate virtual env (if created)
+3. Run command
+    -"python app2.py"
+4. Open "localhost:5000" in browser
+
+How to Simulate:-
+
+1. In Editor panel, give your input and then click on Assemble & Simulate.
+2. Input must be of the following format:
+    - When feeding only data:
+        .data
+        ------
+        ------
+        ------
+        .text     ( .text is must)
+        ------    ( instuctions are optional)
+        ------
+    - When feeding only text:
+        .text
+        ------
+        ------
+    - When feeding both data and text:
+        .data
+        ------
+        ------
+        ------
+        .text
+        ------
+        ------
+3. Finally click Assemble & Simulate.
+4. Follow GUI.
+
+Description of Buttons in Simulator Panel:-
+1. RUN   :- Machine code executed at once.
+2. STEP  :- Machine code executed step wise.
+4. RESET :- Reset your progress i.e. reset register,reset memory and restart the execution.
+5. DUMP  :- Dump the code and copy machine code to clipboard.
+6. EXIT  :- Write your data memory in 'output.mc' file.
